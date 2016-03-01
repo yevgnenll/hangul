@@ -1,0 +1,24 @@
+{
+  "name": "gulp-jade-sass",
+  "description": "Gulp를 활용한 Jade & Sass 프로젝트 킷",
+  "main": "",
+  "authors": [
+    "seungkwon <yevgnenll@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://yevgnenll.me",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "susy": "^2.2.12",
+    "bourbon": "^4.2.6"
+  }
+}

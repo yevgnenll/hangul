@@ -1,0 +1,22 @@
+@import module/config
+
+body
+	position: relative
+	margin: 0 auto
+	height: 100%
+
+a
+	text-decoration: none
+
+.wrapper
+	margin: 0 auto
+	position: static
+	display: inline
+
+	// +container(4)
+	+susy-breakpoint($tablet, 10)
+		// +container(10)
+	+susy-breakpoint($desktop, 12)
+		// +container(12)
+
+

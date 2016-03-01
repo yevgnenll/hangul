@@ -1,0 +1,13 @@
+@import "susy";
+
+/* Susy 전역 설정을 덮어쓰기 */
+$susy: (
+    gutter-position: split,
+    debug: (
+    	// column : 12,
+        image  : show,
+        color  : rgba(#66f, .45),
+        // output : overlay,
+        // toggle : top right
+    )
+);
