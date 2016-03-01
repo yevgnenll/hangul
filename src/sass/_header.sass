@@ -1,9 +1,7 @@
 header
-	width: 70%
+	width: 94%
 	font-size: 1rem
-	margin: 10px 10px
-	padding: 10px 10px
-
+	padding: 15px 15px
 
 header > a > span
 	display: block
@@ -18,3 +16,21 @@ header > span.placeholder
 	font-size: 3rem
 	color: transparent
 
+
+.introduce_box 
+	width: 80%
+	margin: 0
+	font-size: 1rem
+	color: #000
+	+susy-breakpoint($tablet,10)
+		width: 480px
+	+susy-breakpoint($desktop, 12)
+		width: 800px
+
+header > a > .right-menu
+	float: right
+	color: #202020
+	position: fixed
+	z-index: 1000
+	right: 15px
+	top: 25px

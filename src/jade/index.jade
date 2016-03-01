@@ -5,7 +5,6 @@ html(lang="ko-KR")
 		title hanguel
 		script(src="style/js/jquery.min.js")
 		link(rel="stylesheet", href="style/css/style.css")
-		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
 	body
@@ -13,10 +12,13 @@ html(lang="ko-KR")
 			a(href="#", aria-label="logo, you can move index page")
 				span.logo hello hangul
 			span.logo.placeholder hello hangul
-			|only education makes equal world. this is for teaching Korean and learning Korean, we are supporting you
-			|TESTESTETS
+			.introduce_box only education makes equal world.<br>
+			|this is for teaching Korean and learning Korean.<br>
+			|we are supporting you
+			a(href="#", aria-label="menu-hamburger")
+				.right-menu.fa.fa-list.fa-3x
 
-		.wrapper.cf
+		.wrapper.clearfix
 			a(href="#", aria-label="website introduce")
 				.introduce
 					article.hover_exposure
@@ -52,7 +54,7 @@ html(lang="ko-KR")
 							p test your grammar
 							p practice make perfect
 							p solve the problem
-		footer.cl
+		footer.clearfix
 			div
 				p Address: Fastcampus 13, Dosan-daero 4-gil, Gangnam-gu, Seoul
 				p Developing Advisor: yamoo9(yamoo9@naver.com)
