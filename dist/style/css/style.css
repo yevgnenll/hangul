@@ -461,13 +461,20 @@ header > span.placeholder {
   }
 }
 
-header > a > .right-menu {
+.right-menu {
   float: right;
   color: #202020;
   position: fixed;
   z-index: 1000;
   right: 15px;
   top: 25px;
+}
+
+.menu-toggle {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #fff;
 }
 
 p {
