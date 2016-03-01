@@ -6,6 +6,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -423,10 +424,9 @@ li {
 }
 /* Susy 전역 설정을 덮어쓰기 */
 header {
-  width: 70%;
+  width: 94%;
   font-size: 1rem;
-  margin: 10px 10px;
-  padding: 10px 10px;
+  padding: 15px 15px;
 }
 
 header > a > span {
@@ -442,6 +442,32 @@ header > span.placeholder {
   position: relative;
   font-size: 3rem;
   color: transparent;
+}
+
+.introduce_box {
+  width: 80%;
+  margin: 0;
+  font-size: 1rem;
+  color: #000;
+}
+@media (min-width: 37.5rem) {
+  .introduce_box {
+    width: 480px;
+  }
+}
+@media (min-width: 62.5rem) {
+  .introduce_box {
+    width: 800px;
+  }
+}
+
+header > a > .right-menu {
+  float: right;
+  color: #202020;
+  position: fixed;
+  z-index: 1000;
+  right: 15px;
+  top: 25px;
 }
 
 p {
@@ -643,7 +669,8 @@ a {
 .wrapper {
   margin: 0 auto;
   position: static;
-  display: inline;
+  display: inline-block;
+  width: 100%;
 }
 
 
