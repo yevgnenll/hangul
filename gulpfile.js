@@ -15,6 +15,10 @@ var gulp         = require('gulp'),
 
 	// 스프라이트 생성 모듈
 	spritesmith  = require('gulp.spritesmith'),
+	// js concat 하기
+	concat 		 = require('gulp-concat'),
+	// js 압축하기
+	uglify		 = require('gulp-uglify'),
 
 	/* 유틸리티 ---------------------------------- */
 	gulpif       = require('gulp-if'),
@@ -36,7 +40,7 @@ var gulp         = require('gulp'),
  */
 // 기본 업무
 gulp.task('default', [
-	'jade',
+	'jade','concat',
 	config.sass_engine === 'ruby' ?
 		'sass:ruby' :
 		config.sass_engine === 'compass' ?
@@ -51,6 +55,7 @@ gulp.task('default', [
 // 관찰 업무
 gulp.task('watch', function() {
 	gulp.watch(['src/**/*.jade'], ['watch:jade']);
+	gulp.watch(['src/js/**/*.js'], ['concat']);
 	config.sass_engine === 'ruby' ?
 		gulp.watch(['src/sass/**/*'], ['sass:ruby']) :
 		config.sass_engine === 'compass' ?
@@ -130,6 +135,17 @@ gulp.task('sprite', function() {
 	var cssStream = spriteData.css.pipe(gulp.dest('src/sass/'));
 
 	return merge(imgStream, cssStream);
+});
+// js코드 병합 
+gulp.task('concat', function(){
+	gulp
+		.src(['./src/js/*.js', './src/js/lib/*.js'])
+		// 내가 만든 js파일을 먼저 병합하고 그 뒤에 jquery등의 lib파일을 병합한다
+		.pipe(concat('combined.js')) // 병합하고
+		.pipe(uglify({
+			preserveComments: 'some'
+		})) // 압축한다
+		.pipe(gulp.dest('./dist/style/js/'));
 });
 
 
