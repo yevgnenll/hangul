@@ -29,6 +29,7 @@ mobile to desktop page -> 현재 해외 웹의 트렌드<br>
 django, python, mariadb, html5(jade), css3(sass, susy), javascript(jquery)<br>
 nodejs, nginx, aws, github, browserify<br>
 <br>
+##개발자들
 developers' insta: 박승권(@hxd.ord), 유동현(@jkoon20133)<br>
 <br>
 ###thanks to
