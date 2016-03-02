@@ -7,8 +7,8 @@ p
 	width: 100%
 	height: 100%
 
-.test
-	min-height: 200vh
+%box_height
+	height: 340px
 
 // mouse over, tab focus시 나타나는 레이아웃
 %inner_ex
@@ -47,8 +47,8 @@ p
 	@extend %box_init
 	// image node가 아닌 background로 이미지를 넣으면 어떨까?
 	@extend %background
+	@extend %box_height
 	background-image: url("../images/korea0.jpg")
-	height: 300px
 	+susy-breakpoint($tablet,10)
 		+span(4)
 	+susy-breakpoint($desktop, 12)
@@ -66,8 +66,8 @@ a:nth-child(1):focus .hover_exposure,
 .practice
 	@extend %box_init
 	@extend %background
+	@extend %box_height
 	background-image: url("../images/korea1.jpeg")
-	height: 300px
 	+susy-breakpoint($tablet,10)
 		+span(6 at 5 last)
 	+susy-breakpoint($desktop, 12)
@@ -82,8 +82,8 @@ a:nth-child(2):focus .hover_exposure,
 .qna
 	@extend %box_init
 	@extend %background
+	@extend %box_height
 	background-image: url('../images/korea2.jpeg')
-	height: 300px
 	+susy-breakpoint($tablet,10)
 		+span(6)
 	+susy-breakpoint($desktop, 12)
@@ -99,8 +99,8 @@ a:nth-child(3):focus .hover_exposure,
 .problems
 	@extend %box_init
 	@extend %background
+	@extend %box_height
 	background-image: url('../images/problems.png')
-	height: 300px
 	+susy-breakpoint($tablet,10)
 		+span(4 at 7)
 	+susy-breakpoint($desktop, 12)

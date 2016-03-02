@@ -3,62 +3,76 @@ html(lang="ko-KR")
 	head
 		meta(charset="UTF-8")
 		title hanguel
-		script(src="style/js/jquery.min.js")
 		link(rel="stylesheet", href="style/css/style.css")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
 	body
-		header
-			a(href="#", aria-label="logo, you can move index page")
-				span.logo hello hangul
-			span.logo.placeholder hello hangul
-			.introduce_box only education makes equal world.<br>
-				|this is for teaching Korean and learning Korean.<br>
-				|we are supporting you
-			a(href="#", aria-label="menu-hamburger" data-effect="st-effect-1" role="button" ).fa.fa-bars.fa-3x.right-menu
-				
+		#st-container.st-container
+			nav.st-menu.st-effect-1#menu-1
+				h2 menu
+				ul
+					li
+						a(href="#") grammar
+					li
+						a(href="#") grammar
+					li
+						a(href="#") grammar
 
-		.wrapper.clearfix
-			a(href="#", aria-label="website introduce")
-				.introduce
-					article.hover_exposure
-						h1 skilful lectures
-						.hover_content
-							p grammar
-							p todays speech
-							p useful examples
+			.st-pusher
+				.st-content-inner
+					header
+						a(href="#", aria-label="logo, you can move index page")
+							span.logo hello hangul
+						span.logo.placeholder hello hangul
+						.introduce_box only education makes equal world.<br>
+							|this is for teaching Korean and learning Korean.<br>
+							|we are supporting you
+						#st-trigger-effects.column
+							button(href="#", aria-label="menu-hamburger" data-effect="st-effect-1").fa.fa-bars.fa-3x.right-menu
+							
 
-			a(href="#", aria-label="pratice gramma and conversation")
-				.practice
-					article.hover_exposure
-						h1 only practice make perfect
-						.hover_content
-							p grammar
-							p todays speech
-							p useful examples
+					.wrapper.clearfix
+						a(href="#", aria-label="website introduce")
+							.introduce
+								article.hover_exposure
+									h1 skilful lectures
+									.hover_content
+										p grammar
+										p todays speech
+										p useful examples
 
-			a(href="#", aria-label="questions and answer all of korea")
-				.qna
-					article.hover_exposure
-						h1 communicate with annother users
-						.hover_content
-							p ask questions
-							p tell the answer which i can
-							p communicate!
+						a(href="#", aria-label="pratice gramma and conversation")
+							.practice
+								article.hover_exposure
+									h1 only practice make perfect
+									.hover_content
+										p grammar
+										p todays speech
+										p useful examples
 
-			a(href="#" aria-label="examples ans problems train your korean ability")
-				.problems
-					article.hover_exposure
-						h1 problems depend on level
-						.hover_content
-							p test your grammar
-							p practice make perfect
-							p solve the problem
+						a(href="#", aria-label="questions and answer all of korea")
+							.qna
+								article.hover_exposure
+									h1 communicate with annother users
+									.hover_content
+										p ask questions
+										p tell the answer which i can
+										p communicate!
 
-				
-		footer.clearfix
-			div
-				p Address: Fastcampus 13, Dosan-daero 4-gil, Gangnam-gu, Seoul
-				p Developing Advisor: yamoo9(yamoo9@naver.com)
-				p Customer service: @hxd.ord (insta)
-				p Copyright ⓒ 2015 FastTrack Asia & FastCampus Seungkwon, DongHyun All Rights Reserved.
+						a(href="#" aria-label="examples ans problems train your korean ability")
+							.problems
+								article.hover_exposure
+									h1 problems depend on level
+									.hover_content
+										p test your grammar
+										p practice make perfect
+										p solve the problem
+
+							
+					footer.clearfix.st-content-inner
+						div
+							p Address: Fastcampus 13, Dosan-daero 4-gil, Gangnam-gu, Seoul
+							p Developing Advisor: yamoo9(yamoo9@naver.com)
+							p Customer service: @hxd.ord (insta)
+							p Copyright ⓒ 2015 FastTrack Asia & FastCampus Seungkwon, DongHyun All Rights Reserved.
+		script(src="style/js/combined.js")
