@@ -142,9 +142,7 @@ gulp.task('concat', function(){
 		.src(['./src/js/*.js', './src/js/lib/*.js'])
 		// 내가 만든 js파일을 먼저 병합하고 그 뒤에 jquery등의 lib파일을 병합한다
 		.pipe(concat('combined.js')) // 병합하고
-		.pipe(uglify({
-			preserveComments: 'some'
-		})) // 압축한다
+		.pipe(uglify()) // 압축한다
 		.pipe(gulp.dest('./dist/style/js/'));
 });
 
